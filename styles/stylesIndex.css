@@ -177,6 +177,13 @@ header {
 .content-wrapper h3 {
     margin-top: 0; /* Elimina el margen superior si hay uno por defecto */
 }
+.content-wrapper li {
+    text-align: justify; /* Elimina el margen superior si hay uno por defecto */
+}
+
+.content-wrapper ul {
+    width: 100%; /* Elimina el margen superior si hay uno por defecto */
+}
 
 .company, .institution, .provider {
     font-style: italic;
@@ -542,4 +549,8 @@ footer {
  /* Mantén esta para caso de éxito si no lleva logo */
     align-items:center; 
     }   
+
+    .content-wrapper li {
+    text-align: center; /* Elimina el margen superior si hay uno por defecto */
+    }
 }
