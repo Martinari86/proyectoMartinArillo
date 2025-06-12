@@ -131,6 +131,12 @@ header {
     gap: 20px; /* Espacio entre el logo y el contenido */
 }
 
+.job-entry {
+ /* Mantén esta para caso de éxito si no lleva logo */
+    align-items:start; 
+ 
+}
+
 .job-entry h3,
 .education-entry h3,
 .training-entry h3,
@@ -386,7 +392,7 @@ footer {
 }
 
 .carousel-slide img {
-    width: 400px;
+    width: 100%;
     height: auto;
     object-fit: cover; 
     display: block;
@@ -523,5 +529,17 @@ footer {
 
     .tech-list {
        justify-content: center;
+    }
+    
+    .job-entry,
+    .education-entry,
+    .training-entry,
+    .case-study {
+        flex-direction: column;
+    }
+
+    .job-entry {
+ /* Mantén esta para caso de éxito si no lleva logo */
+    align-items:center; 
     }   
 }
