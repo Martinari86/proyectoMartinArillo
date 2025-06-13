@@ -182,7 +182,18 @@ header .container {
 .job-entry {
  /* Mantén esta para caso de éxito si no lleva logo */
     align-items:start;
+}
 
+.education-entry
+ {
+ /* Mantén esta para caso de éxito si no lleva logo */
+    width:30%;
+}
+
+.case-study
+ {
+ /* Mantén esta para caso de éxito si no lleva logo */
+    width:40%;
 }
 
 .job-entry h3,
