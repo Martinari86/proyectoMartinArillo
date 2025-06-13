@@ -544,7 +544,7 @@ footer {
 
 
 /* Responsive Design */
-@media (max-width: 1480px) {
+@media (max-width: 2000px) {
  header .container {
         flex-direction: row; /* Mantener en fila para el logo y los controles */
         justify-content: space-between; /* Empuja el logo a la izquierda y los controles a la derecha */
