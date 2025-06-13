@@ -52,10 +52,38 @@ a:hover {
 }
 
 /* Header */
+
+.header-hidden {
+    transform: translateY(-100%); /* Mueve el header completamente hacia arriba */
+}
+
 header {
     background: #333;
     color: #fff;
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-out;
+}
+
+header .container {
+    display: flex; /* Asegura que el container usa flexbox */
+    flex-direction: row; /* Por defecto en filas para pantallas grandes */
+    justify-content: space-between; /* Espacia el logo y los controles */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0 20px; /* Añade padding horizontal para pantallas grandes también */
+    width: 80%; /* Mantén el ancho del container */
+    margin: auto; /* Centra el container */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el texto del logo a la izquierda */
 }
 
 .logo h1 {
@@ -69,6 +97,12 @@ header {
     font-size: 0.9em;
 }
 
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre los controles (lang-toggle y menu-toggle) */
+}
+
 .menu-toggle {
     background: none;
     border: none;
@@ -76,6 +110,20 @@ header {
     font-size: 1.5em;
     cursor: pointer;
     display: none; /* Hidden by default on larger screens */
+}
+
+.lang-toggle {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .main-nav ul {
@@ -133,8 +181,8 @@ header {
 
 .job-entry {
  /* Mantén esta para caso de éxito si no lleva logo */
-    align-items:start; 
- 
+    align-items:start;
+
 }
 
 .job-entry h3,
@@ -169,8 +217,8 @@ header {
 .content-wrapper {
     flex-grow: 1;
     justify-items: center;
-    
-   
+
+
 }
 
 /* Ajustes para el texto dentro del content-wrapper si es necesario */
@@ -401,7 +449,7 @@ footer {
 .carousel-slide img {
     width: 100%;
     height: 70vh;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
     border-radius: 8px 8px 0 0; /* Bordes superiores redondeados */
 }
@@ -497,20 +545,43 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 1480px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
+ header .container {
+        flex-direction: row; /* Mantener en fila para el logo y los controles */
+        justify-content: space-between; /* Empuja el logo a la izquierda y los controles a la derecha */
+        align-items: center; /* Centra verticalmente */
+        padding: 0 20px; /* Asegura padding para móviles */
     }
 
     .logo {
-        margin-bottom: 15px;
+        margin-bottom: 0; /* Elimina el margen inferior que se agregó antes */
+        align-items: flex-start; /* Asegura que el logo esté alineado a la izquierda */
+        width: auto; /* Permite que el logo ocupe solo el espacio necesario */
+        text-align: left; /* Alinea el texto del logo a la izquierda */
+    }
+
+    .header-controls {
+        display: flex;
+        align-items: center; /* Centra verticalmente los botones dentro de este contenedor */
+        gap: 15px; /* Espacio entre los botones */
+        width: auto; /* Permite que los controles ocupen solo el espacio necesario */
+        position: static; /* Asegura que no haya posicionamiento absoluto */
+        top: auto;
+        right: auto;
+        margin-bottom: 0; /* Elimina el margen inferior que se agregó antes */
     }
 
     .menu-toggle {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        display: block; /* Muestra el botón de hamburguesa en pantallas pequeñas */
+        order: 2; /* Coloca el menu-toggle después del lang-toggle si está dentro de header-controls */
+        /* Asegurarse de que no tenga posicionamiento absoluto ni márgenes no deseados */
+        position: static;
+        margin: 0;
+    }
+
+    .lang-toggle {
+        order: 1; /* Coloca el lang-toggle antes del menu-toggle */
+        /* Asegurarse de que no tenga márgenes no deseados */
+        margin: 0;
     }
 
     .main-nav {
@@ -518,16 +589,24 @@ footer {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
+        background: #333;
+        /* Asegura que el menú se extienda por debajo de todo el header */
+        position: absolute; /* O fixed, dependiendo del comportamiento deseado */
+        top: auto; /* Se ajustará por JavaScript */
+        left: 0;
+        right: 0;
     }
 
     .main-nav.open {
-        max-height: 500px; /* Adjust as needed based on the number of links */
+        max-height: 500px; /* Ajustar según el contenido */
+        margin-top: 500px;
     }
 
     .main-nav ul {
         flex-direction: column;
         align-items: center;
         padding-top: 20px;
+        padding-bottom: 20px; /* Añadir padding inferior al menú desplegado */
     }
 
     .main-nav ul li {
@@ -537,7 +616,7 @@ footer {
     .tech-list {
        justify-content: center;
     }
-    
+
     .job-entry,
     .education-entry,
     .training-entry,
@@ -546,11 +625,11 @@ footer {
     }
 
     .job-entry {
- /* Mantén esta para caso de éxito si no lleva logo */
-    align-items:center; 
-    }   
+        align-items:center;
+    }
 
     .content-wrapper li {
-    text-align: center; /* Elimina el margen superior si hay uno por defecto */
+        text-align: center;
     }
+
 }

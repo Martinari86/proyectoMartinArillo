@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,93 +13,104 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Martin Arillo</h1>
-                <p>Desarrolador de Soluciones</p>
+                <h1><span data-en="Martin Arillo">Martin Arillo</span></h1>
+                <p><span data-en="Solutions Developer">Desarrolador de Soluciones</span></p>
+            
+                <div class="header-controls">
+                    <button class="lang-toggle" data-lang-toggle="en"><i class="fas fa-globe"></i> <span class="lang-text">English</span></button>
+                </div>
             </div>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#sobre-mi-profesional">Sobre mí</a></li>
-                    <li><a href="#experiencia">Experiencia Laboral</a></li>
-                    <li><a href="#educacion">Educación</a></li>
-                    <li><a href="#capacitaciones">Soft Skills</a></li>
-                    <li><a href="#tecnologias">Tecnologías Aplicadas</a></li>
-                    <li><a href="#idiomas">Idiomas</a></li>
-                    <li><a href="#casos-exito">Casos de Éxito</a></li>
-                    <li><a href="#sobre-mi-personal-hobbies">+ Sobre mí</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#sobre-mi-profesional" data-en="About Me">Sobre mí</a></li>
+                    <li><a href="#experiencia" data-en="Work Experience">Experiencia Laboral</a></li>
+                    <li><a href="#educacion" data-en="Education">Educación</a></li>
+                    <li><a href="#capacitaciones" data-en="Soft Skills">Soft Skills</a></li>
+                    <li><a href="#tecnologias" data-en="Applied Technologies">Tecnologías Aplicadas</a></li>
+                    <li><a href="#idiomas" data-en="Languages">Idiomas</a></li>
+                    <li><a href="#casos-exito" data-en="Success Stories">Casos de Éxito</a></li>
+                    <li><a href="#sobre-mi-personal-hobbies" data-en="+ About Me">+ Sobre mí</a></li>
+                    <li><a href="#contacto" data-en="Contact">Contacto</a></li>
                 </ul>
             </nav>
+            <div class="header-controls"></div>  
+                <button class="menu-toggle">
+                            <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
-<section id="sobre-mi-profesional" class="section">
+        <section id="sobre-mi-profesional" class="section">
             <div class="container">
-                <h2>Sobre Mí</h2>
-                <p class="sobreMi">En los últimos años, he transformado mi carrera al encontrar pasión y alegría en 
-la ciencia de datos. Mi enfoque se centra en generar entornos de visualización y automatización de procesos, liberando a los usuarios de tareas repetitivas para 
-que puedan dedicarse a asuntos más relevantes. Actualmente, desempeño un papel crucial en el gerenciamiento de las APPs internas de YPF. Aquí, convergen todos los datos de la VP, y mi labor consiste en crear entornos de carga para 
-nuevos datos y diseñar tableros específicos para cada sector. Mi visión y objetivo personal son claros: convertir esta APP en la fuente oficial de información, siendo 
-la única referencia confiable para consultas. La tecnología es mi aliada en este camino, optimizando la gestión y asegurando que YPF esté a la vanguardia en la 
-era digital. </p>
+                <h2><span data-en="About Me">Sobre Mí</span></h2>
+                <p class="sobreMi">
+                    <span data-en="In recent years, I have transformed my career by finding passion and joy in data science. My focus is on creating visualization environments and automating processes, freeing users from repetitive tasks so they can dedicate themselves to more relevant matters. Currently, I play a crucial role in managing YPF's internal APPs. Here, all VP data converges, and my job is to create loading environments for new data and design specific dashboards for each sector. My personal vision and goal are clear: to make this APP the official source of information, being the only reliable reference for queries. Technology is my ally on this path, optimizing management and ensuring that YPF is at the forefront of the digital era.">
+                        En los últimos años, he transformado mi carrera al encontrar pasión y alegría en la ciencia de datos. Mi enfoque se centra en generar entornos de visualización y automatización de procesos, liberando a los usuarios de tareas repetitivas para que puedan dedicarse a asuntos más relevantes. Actualmente, desempeño un papel crucial en el gerenciamiento de las APPs internas de YPF. Aquí, convergen todos los datos de la VP, y mi labor consiste en crear entornos de carga para nuevos datos y diseñar tableros específicos para cada sector. Mi visión y objetivo personal son claros: convertir esta APP en la fuente oficial de información, siendo la única referencia confiable para consultas. La tecnología es mi aliada en este camino, optimizando la gestión y asegurando que YPF esté a la vanguardia en la era digital.
+                    </span>
+                </p>
                 <div class="carousel-container">
                     <div class="carousel-slides">
                         <div class="carousel-slide fade">
                             <img src="./img/selfieMA.jpg" alt="Descripción de la foto 1">
                             <div class="carousel-caption">
-                                <p>Ingeniero Industrial, Programador y Desarrollador de Soluciones.</p>
+                                <p><span data-en="Industrial Engineer, Programmer and Solutions Developer.">Ingeniero Industrial, Programador y Desarrollador de Soluciones.</span></p>
                             </div>
                         </div>
                         <div class="carousel-slide fade">
                             <img src="./img/halliburtonMA.jpg" alt="Descripción de la foto 2">
                             <div class="carousel-caption">
-                                <p>Experiencia en Industrias Oil and Gas, Salud, Retail y Hoteleria</p>
+                                <p><span data-en="Experience in Oil and Gas, Health, Retail and Hospitality Industries">Experiencia en Industrias Oil and Gas, Salud, Retail y Hoteleria</span></p>
                             </div>
                         </div>
                         <div class="carousel-slide fade">
                             <img src="./img/cocinaMA2.jpeg" alt="Descripción de la foto 3">
                             <div class="carousel-caption">
-                                <p>Aficionado de la Tecnología Aplicada, Apps Development, del BI y la Pizza</p>
+                                <p><span data-en="Lover of Applied Technology, Apps Development, BI and Pizza">Aficionado de la Tecnología Aplicada, Apps Development, del BI y la Pizza</span></p>
                             </div>
                         </div>
                         <div class="carousel-slide fade">
                             <img src="./img/oficinaMA.jpeg" alt="Descripción de la foto 4">
                             <div class="carousel-caption">
-                                <p>Preparado para enfrentear Nuevos Desafíos y Experiencias.</p>
+                                <p><span data-en="Ready to face New Challenges and Experiences.">Preparado para enfrentear Nuevos Desafíos y Experiencias.</span></p>
                             </div>
                         </div>
-                        </div>
-                    <a class="carousel-prev">&#10094;</a>
-                    <a class="carousel-next">&#10095;</a>
+                    </div>
+                    <a class="carousel-prev">❮</a>
+                    <a class="carousel-next">❯</a>
                 </div>
                 <div style="text-align:center">
                     <span class="carousel-dot" onclick="currentSlide(1)"></span>
                     <span class="carousel-dot" onclick="currentSlide(2)"></span>
                     <span class="carousel-dot" onclick="currentSlide(3)"></span>
                     <span class="carousel-dot" onclick="currentSlide(4)"></span>
-                    </div>
-            </div> 
-    </section>        
+                </div>
+            </div>
+        </section>
 
-   
-<section id="experiencia" class="section">
+
+        <section id="experiencia" class="section">
             <div class="container">
-                <h2>Experiencia Laboral</h2>
+                <h2><span data-en="Work Experience">Experiencia Laboral</span></h2>
                 <div class="job-entry">
                     <div class="logo-wrapper">
                         <img src="./img/logoYPFMA.png" alt="Logo de la Empresa" class="company-logo">
                     </div>
                     <div class="content-wrapper">
-                        <h3>Gestor Datalización Sr.</h3>
+                        <h3><span data-en="Sr. Data Manager">Gestor Datalización Sr.</span></h3>
                         <p class="company">YPF</p>
                         <p class="dates">01/01/2017 - 31/05/2025</p>
                         <ul>
-                            <li>Enfoque centrado en la creación de entornos de carga y visualización de información que respalden la toma de decisiones.<br>Procesos Claves:<br>a) Detección de Necesidades del cliente<br>b) Adquisición de Datos<br>c) Visualización de Datos<br>d) Automatización de tareas via Power Platform </li>
-                            <li>Proyectos:<br>1- YPF 360 En desarrollo – App integral para toda la Empresa. Desarrollo en conjunto con Sistemas.<br>2- VP 360 2023/Presente – App integradora de la VP de Tecnologias Digitales. 
-Planeamiento, Ejecución y Gerenciamiento.<br>3- GESCOM 2020/Presente – App exclusiva que nuclea todos los sectores de Supply Chain.  
+                            <li>
+                                <span data-en="Focused on creating data loading and visualization environments that support decision-making.<br>Key Processes:<br>a) Customer Needs Detection<br>b) Data Acquisition<br>c) Data Visualization<br>d) Task automation via Power Platform">
+                                    Enfoque centrado en la creación de entornos de carga y visualización de información que respalden la toma de decisiones.<br>Procesos Claves:<br>a) Detección de Necesidades del cliente<br>b) Adquisición de Datos<br>c) Visualización de Datos<br>d) Automatización de tareas via Power Platform
+                                </span>
+                            </li>
+                            <li>
+                                <span data-en="Projects:<br>1- YPF 360 In development – Integral App for the entire Company. Developed in conjunction with Systems.<br>2- VP 360 2023/Present – Integrating App for the Digital Technologies VP. Planning, Execution and Management.<br>3- GESCOM 2020/Present – Exclusive App that gathers all Supply Chain sectors.">
+                                    Proyectos:<br>1- YPF 360 En desarrollo – App integral para toda la Empresa. Desarrollo en conjunto con Sistemas.<br>2- VP 360 2023/Presente – App integradora de la VP de Tecnologias Digitales. Planeamiento, Ejecución y Gerenciamiento.<br>3- GESCOM 2020/Presente – App exclusiva que nuclea todos los sectores de Supply Chain.
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -109,13 +120,25 @@ Planeamiento, Ejecución y Gerenciamiento.<br>3- GESCOM 2020/Presente – App ex
                         <img src="./img/logoHalliburtonMA.png" alt="Logo de la Empresa" class="company-logo">
                     </div>
                     <div class="content-wrapper">
-                        <h3>Technical Professional Frac/Acid</h3>
+                        <h3><span data-en="Technical Professional Frac/Acid">Technical Professional Frac/Acid</span></h3>
                         <p class="company">Halliburton</p>
                         <p class="dates">01/01/2012 - 31/12/2016</p>
                         <ul>
-                            <li>Planificación, gestión y ejecución de servicios especiales:<br>Procesos Clave:<br>a) Desarrollo de Soluciones para clientes<br>b) DIseño y Simulacion de fracturas hidraulicas<br>c) Ejecución operativa<br>d) Reportes operativos, de desempeño y de calidad </li>
-                            <li>Servicios Especiales:<br>1- Fracturas Hidraulicas Convencionales/No Convencionales<br>2- Acidificacion<br>3- Control de Arenas<br>4- Gestión de calidad en laboratorio y campo </li>
-                            <li>Campañas:<br>- Petrobras/2013: Cuencas Austral<br>- YPF/2014 : Cuenca Neuquina </li>
+                            <li>
+                                <span data-en="Planning, management and execution of special services:<br>Key Processes:<br>a) Development of Solutions for clients<br>b) Design and Simulation of hydraulic fractures<br>c) Operational execution<br>d) Operational, performance and quality reports">
+                                    Planificación, gestión y ejecución de servicios especiales:<br>Procesos Clave:<br>a) Desarrollo de Soluciones para clientes<br>b) DIseño y Simulacion de fracturas hidraulicas<br>c) Ejecución operativa<br>d) Reportes operativos, de desempeño y de calidad
+                                </span>
+                            </li>
+                            <li>
+                                <span data-en="Special Services:<br>1- Conventional/Unconventional Hydraulic Fractures<br>2- Acidification<br>3- Sand Control<br>4- Quality management in laboratory and field">
+                                    Servicios Especiales:<br>1- Fracturas Hidraulicas Convencionales/No Convencionales<br>2- Acidificacion<br>3- Control de Arenas<br>4- Gestión de calidad en laboratorio y campo
+                                </span>
+                            </li>
+                            <li>
+                                <span data-en="Campaigns:<br>- Petrobras/2013: Austral Basins<br>- YPF/2014 : Neuquina Basin">
+                                    Campañas:<br>- Petrobras/2013: Cuencas Austral<br>- YPF/2014 : Cuenca Neuquina
+                                </span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -124,14 +147,14 @@ Planeamiento, Ejecución y Gerenciamiento.<br>3- GESCOM 2020/Presente – App ex
 
         <section id="educacion" class="section light-bg">
             <div class="container">
-                <h2>Educación</h2>
+                <h2><span data-en="Education">Educación</span></h2>
                 <div class="education-entry">
                     <div class="logo-wrapper">
                         <img src="./img/logoUCAMA.png" alt="Logo de la Institución" class="institution-logo">
                     </div>
                     <div class="content-wrapper">
-                        <h3>Ingeniero Industrial</h3>
-                        <p class="institution">Universidad Católica Argentina</p>
+                        <h3><span data-en="Industrial Engineer">Ingeniero Industrial</span></h3>
+                        <p class="institution"><span data-en="Argentine Catholic University">Universidad Católica Argentina</span></p>
                         <p class="dates">03/2005 - 12/2010</p>
                     </div>
                 </div>
@@ -140,7 +163,7 @@ Planeamiento, Ejecución y Gerenciamiento.<br>3- GESCOM 2020/Presente – App ex
                         <img src="./img/logoCoderHouse.png" alt="Logo de la Institución" class="institution-logo">
                     </div>
                     <div class="content-wrapper">
-                        <h3>Data Scientist</h3>
+                        <h3><span data-en="Data Scientist">Data Scientist</span></h3>
                         <p class="institution">CoderHouse</p>
                         <p class="dates">01/2022 - 12/2022</p>
                     </div>
@@ -150,8 +173,8 @@ Planeamiento, Ejecución y Gerenciamiento.<br>3- GESCOM 2020/Presente – App ex
                         <img src="./img/logoSalvador.png" alt="Logo de la Institución" class="institution-logo">
                     </div>
                     <div class="content-wrapper">
-                        <h3>Maestria en Supply Chain</h3>
-                        <p class="institution">Universidad del Salvador - YPF</p>
+                        <h3><span data-en="Master in Supply Chain">Maestria en Supply Chain</span></h3>
+                        <p class="institution"><span data-en="University of Salvador - YPF">Universidad del Salvador - YPF</span></p>
                         <p class="dates">03/2022 - 10/2023</p>
                     </div>
                 </div>
@@ -160,7 +183,7 @@ Planeamiento, Ejecución y Gerenciamiento.<br>3- GESCOM 2020/Presente – App ex
                         <img src="./img/logoCoderHouse.png" alt="Logo de la Institución" class="institution-logo">
                     </div>
                     <div class="content-wrapper">
-                        <h3>Desarrollador Web Full Stack</h3>
+                        <h3><span data-en="Full Stack Web Developer">Desarrollador Web Full Stack</span></h3>
                         <p class="institution">CoderHouse</p>
                         <p class="dates">10/2023 - 03/2025</p>
                     </div>
@@ -170,67 +193,69 @@ Planeamiento, Ejecución y Gerenciamiento.<br>3- GESCOM 2020/Presente – App ex
 
         <section id="capacitaciones" class="section">
             <div class="container">
-                <h2>Soft Skills</h2>
+                <h2><span data-en="Soft Skills">Soft Skills</span></h2>
                 <ul class="tech-list">
-                    <li data-percentage="Experimentado">Trabajo Interdisciplinario (Ágile)</li>
-                    <li data-percentage="Experimentado">Comunicación Efectiva</li>
-                    <li data-percentage="Experimentado">Motivacion</li>
-                    <li data-percentage="Experimentado">Diversidad e Inclusión</li>
-                    <li data-percentage="Experimentado">Liderazgo</li>
-                    <li data-percentage="Experimentado">Autodidacta</li>
-                    </ul>
+                    <li data-percentage="Experienced"><span data-en="Interdisciplinary Work (Agile)">Trabajo Interdisciplinario (Ágile)</span></li>
+                    <li data-percentage="Experienced"><span data-en="Effective Communication">Comunicación Efectiva</span></li>
+                    <li data-percentage="Experienced"><span data-en="Motivation">Motivacion</span></li>
+                    <li data-percentage="Experienced"><span data-en="Diversity and Inclusion">Diversidad e Inclusión</span></li>
+                    <li data-percentage="Experienced"><span data-en="Leadership">Liderazgo</span></li>
+                    <li data-percentage="Experienced"><span data-en="Self-taught">Autodidacta</span></li>
+                </ul>
             </div>
         </section>
 
         <section id="tecnologias" class="section light-bg">
             <div class="container">
-                <h2>Tecnologías Aplicadas</h2>
+                <h2><span data-en="Applied Technologies">Tecnologías Aplicadas</span></h2>
                 <ul class="tech-list">
-                    <li data-percentage="Avanzado">Power Apps</li>
-                    <li data-percentage="Avanzado">Power Bi</li>
-                    <li data-percentage="Avanzado">Power Automate</li>
-                    <li data-percentage="Avanzado">HTML5</li>
-                    <li data-percentage="Avanzado">CSS3</li>
-                    <li data-percentage="Avanzado">JavaScript</li>
-                    <li data-percentage="Intermedio">Python</li>
-                    <li data-percentage="Intermedio">Bases de Datos (SQL, NoSQL)</li>
-                    <li data-percentage="Básico">Control de Versiones (Git)</li>
-                    <li data-percentage="Intermedio">React</li> </ul>
+                    <li data-percentage="Advanced">Power Apps</li>
+                    <li data-percentage="Advanced">Power Bi</li>
+                    <li data-percentage="Advanced">Power Automate</li>
+                    <li data-percentage="Advanced">HTML5</li>
+                    <li data-percentage="Advanced">CSS3</li>
+                    <li data-percentage="Advanced">JavaScript</li>
+                    <li data-percentage="Intermediate">Python</li>
+                    <li data-percentage="Intermediate"><span data-en="Databases (SQL, NoSQL)">Bases de Datos (SQL, NoSQL)</span></li>
+                    <li data-percentage="Basic"><span data-en="Version Control (Git)">Control de Versiones (Git)</span></li>
+                    <li data-percentage="Intermediate">React</li>
+                </ul>
             </div>
         </section>
 
         <section id="idiomas" class="section">
             <div class="container">
-                <h2>Idiomas</h2>
+                <h2><span data-en="Languages">Idiomas</span></h2>
                 <ul class="tech-list">
-                    <li data-percentage="Nativo">Español</li>
-                    <li data-percentage="Nivel C1">Inglés</li>
-                    <li data-percentage="Básico">Portugués</li>
+                    <li data-percentage="Native"><span data-en="Spanish">Español</span></li>
+                    <li data-percentage="C1 Level"><span data-en="English">Inglés</span></li>
+                    <li data-percentage="Basic"><span data-en="Portuguese">Portugués</span></li>
+                </ul>
             </div>
         </section>
 
         <section id="casos-exito" class="section light-bg">
             <div class="container">
-                <h2>Casos de Éxito</h2>
+                <h2><span data-en="Success Stories">Casos de Éxito</span></h2>
                 <div class="case-study">
                     <h3>APP VP 360</h3>
-                    <p>Creador, Desarrollador y Gerenciador</p>
+                    <p><span data-en="Creator, Developer and Manager">Creador, Desarrollador y Gerenciador</span></p>
                     <ul>
-                        <li>a) Única Fuente de Verdad</li>
-                        <li>b) Módulos Personalizados</li>
-                        <li>c) Integración de Sectores</li>
-                        <li>d) Módulos Personalizados</li>
-                        <li>e) All in One</li>
+                        <li><span data-en="a) Single Source of Truth">a) Única Fuente de Verdad</span></li>
+                        <li><span data-en="b) Personalized Modules">b) Módulos Personalizados</span></li>
+                        <li><span data-en="c) Sector Integration">c) Integración de Sectores</span></li>
+                        <li><span data-en="d) Personalized Modules">d) Módulos Personalizados</span></li>
+                        <li><span data-en="e) All in One">e) All in One</span></li>
                     </ul>
-                    </div>
+                </div>
                 <div class="case-study">
                     <h3>Desafio DWx</h3>
-                    <p>Creador, Desarrollador y Gerenciador</p>
+                    <p><span data-en="Creator, Developer and Manager">Creador, Desarrollador y Gerenciador</span></p>
                     <ul>
-                        <li>a) Ahorro de 500K USD en I+D</li>
-                        <li>b) Captura Real de Valor Sostenido</li>
-                        <li>c) Transversalidad</li>
-                        <li>d) Más de 700 Usuarios activos</li>
+                        <li><span data-en="a) 500K USD Savings in R&D">a) Ahorro de 500K USD en I+D</span></li>
+                        <li><span data-en="b) Real Capture of Sustained Value">b) Captura Real de Valor Sostenido</span></li>
+                        <li><span data-en="c) Transversality">c) Transversalidad</span></li>
+                        <li><span data-en="d) More than 700 Active Users">d) Más de 700 Usuarios activos</span></li>
                     </ul>
                 </div>
             </div>
@@ -238,96 +263,100 @@ Planeamiento, Ejecución y Gerenciamiento.<br>3- GESCOM 2020/Presente – App ex
 
         <section id="sobre-mi-personal-hobbies" class="section">
             <div class="container">
-                <h2>Un poco más Sobre Mí</h2>
+                <h2><span data-en="A little more About Me">Un poco más Sobre Mí</span></h2>
                 <div class="carousel-container">
                     <div class="carousel-slides">
                         <div class="carousel-slide fade">
                             <img src="./img/carrera3MA.JPG" alt="Descripción de la foto 1">
                             <div class="carousel-caption">
-                                <p>Disfruto mucho pasar tiempo al aire libre, explorando la naturaleza y conectando con nuevos paisajes.</p>
+                                <p><span data-en="I really enjoy spending time outdoors, exploring nature and connecting with new landscapes.">Disfruto mucho pasar tiempo al aire libre, explorando la naturaleza y conectando con nuevos paisajes.</span></p>
                             </div>
                         </div>
                         <div class="carousel-slide fade">
                             <img src="./img/surfMA.jpeg" alt="Descripción de la foto 2">
                             <div class="carousel-caption">
-                                <p>El deporte es parte de mi vida. Me mantiene enfocado y enérgico.</p>
+                                <p><span data-en="Sport is part of my life. It keeps me focused and energetic.">El deporte es parte de mi vida. Me mantiene enfocado y enérgico.</span></p>
                             </div>
                         </div>
                         <div class="carousel-slide fade">
                             <img src="./img/amigosMA.jpeg" alt="Descripción de la foto 3">
                             <div class="carousel-caption">
-                                <p>Me encanta pasar tiempos con familia y amigos.</p>
+                                <p><span data-en="I love spending time with family and friends.">Me encanta pasar tiempos con familia y amigos.</span></p>
                             </div>
                         </div>
                         <div class="carousel-slide fade">
                             <img src="./img/amigosMA2.jpeg" alt="Descripción de la foto 4">
                             <div class="carousel-caption">
-                                <p>y con más amigos.</p>
+                                <p><span data-en="and with more friends.">y con más amigos.</span></p>
                             </div>
                         </div>
                         <div class="carousel-slide fade">
                             <img src="./img/cocinaMA.jpeg" alt="Descripción de la foto 5">
                             <div class="carousel-caption">
-                                <p>Cocinar me divierte y me relaja.</p>
+                                <p><span data-en="Cooking is fun and relaxing for me.">Cocinar me divierte y me relaja.</span></p>
                             </div>
                         </div>
                         <div class="carousel-slide fade">
                             <img src="./img/viajeMA.jpeg" alt="Descripción de la foto 6">
                             <div class="carousel-caption">
-                                <p>Me encanta viajar y conocer nuevas culturas, cada viaje es un aprendizaje inolvidable.</p>
+                                <p><span data-en="I love traveling and learning about new cultures, each trip is an unforgettable experience.">Me encanta viajar y conocer nuevas culturas, cada viaje es un aprendizaje inolvidable.</span></p>
                             </div>
                         </div>
-                        </div>
-                    <a class="carousel-prev">&#10094;</a>
-                    <a class="carousel-next">&#10095;</a>
+                    </div>
+                    <a class="carousel-prev">❮</a>
+                    <a class="carousel-next">❯</a>
                 </div>
                 <div style="text-align:center">
                     <span class="carousel-dot" onclick="currentSlide(1)"></span>
                     <span class="carousel-dot" onclick="currentSlide(2)"></span>
                     <span class="carousel-dot" onclick="currentSlide(3)"></span>
                     <span class="carousel-dot" onclick="currentSlide(4)"></span>
-                    </div>
+                </div>
             </div>
         </section>
-        
+
         <section id="contacto" class="section light-bg">
             <div class="container">
-                <h2>Formulario de Contacto</h2>
+                <h2><span data-en="Contact Form">Formulario de Contacto</span></h2>
                 <form action="#" method="POST" class="contact-form">
                     <div class="form-group">
-                        <label for="nombre">Nombre:</label>
+                        <label for="nombre"><span data-en="Name:">Nombre:</span></label>
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email:</label>
+                        <label for="email"><span data-en="Email:">Email:</span></label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="mensaje">Mensaje:</label>
+                        <label for="mensaje"><span data-en="Message:">Mensaje:</span></label>
                         <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    <button type="submit" class="btn-submit"><span data-en="Send Message">Enviar Mensaje</span></button>
                 </form>
             </div>
         </section>
 
         <section id="ubicacion" class="section">
             <div class="container2">
-                <h2>¿Dónde me Ubico?</h2>
-                <p>Me encuentro en el Barrio de Núñez, CABA</p>
+                <h2><span data-en="Where am I located?">¿Dónde me Ubico?</span></h2>
+                <p><span data-en="I am located in the neighborhood of Núñez, CABA">Me encuentro en el Barrio de Núñez, CABA</span></p>
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0848789070224!2d-58.46223432488762!3d-34.55140625473632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb428f3247daf%3A0x8150cc6075d1fcd0!2sGrecia%202967%2C%20C1429BDB%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1749736125097!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0848789070224!2d-58.46223432488762!3d-34.55140625473632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb428f3247daf%3A0x8150cc6075d1fcd0!2sGrecia%202967%2C%20C1429BDB%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1749736125097!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                    
-                </div>    
+
+            </div>
         </section>
 
     </main>
 
     <footer>
         <div class="container">
-            <p>Ing Martin Arillo<br>Grecia 2967 Nuñez CABA<br>Cel: +54 011 57723999.</p>
-            
+            <p>
+                <span data-en="Eng. Martin Arillo">Ing Martin Arillo</span><br>
+                <span data-en="Grecia 2967 Nuñez CABA">Grecia 2967 Nuñez CABA</span><br>
+                <span data-en="Phone: +54 011 57723999.">Cel: +54 011 57723999.</span>
+            </p>
+
         </div>
     </footer>
 
